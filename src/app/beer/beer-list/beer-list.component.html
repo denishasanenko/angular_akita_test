@@ -1,0 +1,7 @@
+<p>
+  beer-list works!
+</p>
+<ul *ngFor="let beer of beersList | async">
+  <li>{{beer.name}}</li>
+  <img width="50" [src]="beer.image_url" />
+</ul>
